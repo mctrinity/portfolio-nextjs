@@ -1,0 +1,10 @@
+<!-- This is a placeholder for the hero image -->
+<!-- You should replace this with an actual image file -->
+<!-- Recommended size: 400x500 pixels -->
+<!-- Supported formats: .jpg, .png, .webp -->
+
+<!-- To add your image:
+1. Save your photo as 'hero-image.jpg' in the public folder
+2. Update the imageUrl prop in the Hero component if needed
+3. Make sure the image is optimized for web (compressed, appropriate size)
+-->
