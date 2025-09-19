@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
@@ -12,10 +11,10 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({
-  name = "Your Name",
+  name = "Maki Dizon",
   title = "Full Stack Developer",
   description = "I create modern, responsive web applications using cutting-edge technologies. Passionate about clean code, user experience, and bringing ideas to life.",
-  imageUrl = "/hero-image.jpg",
+  imageUrl = "/nerd.webp",
   imageAlt = "Profile photo"
 }) => {
   const scrollToNextSection = () => {
@@ -119,14 +118,12 @@ const Hero: React.FC<HeroProps> = ({
               
               {/* Image container */}
               <div className="relative bg-white p-4 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-xl overflow-hidden">
-                  <Image
+                <div className="w-80 h-80 md:w-96 md:h-96 rounded-xl overflow-hidden">
+                  {/* Using regular img tag for local images */}
+                  <img
                     src={imageUrl}
                     alt={imageAlt}
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 768px) 320px, 384px"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
               </div>

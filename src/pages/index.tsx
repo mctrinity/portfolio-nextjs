@@ -57,11 +57,11 @@ const Home: React.FC = () => {
     <Layout>
       {/* Hero Section */}
       <Hero 
-        name="John Doe"
+        name="Maki Dizon"
         title="Full Stack Developer"
         description="I create modern, responsive web applications using cutting-edge technologies. Passionate about clean code, user experience, and bringing ideas to life."
-        imageUrl="/api/placeholder/400/500"
-        imageAlt="John Doe - Full Stack Developer"
+        imageUrl="/nerd.webp"
+        imageAlt="Maki Dizon - Full Stack Developer"
       />
 
       {/* Skills Section */}

@@ -2,7 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['api.placeholder.com', 'via.placeholder.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'api.placeholder.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
+    ],
+    // Disable image optimization for local development
+    unoptimized: true,
   },
 }
 
